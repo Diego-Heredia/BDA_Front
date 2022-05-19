@@ -6,7 +6,7 @@ const  options = {
     headers:{
         'Content-Type': 'application/json'
     },
-    body: JSON.stringify(parameter)
+    // body: JSON.stringify(parameter)
 
 }
 async function Nae(){
