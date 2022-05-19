@@ -9,9 +9,9 @@ function capcha_expired () {
 const e_cap = document.querySelector('.error_captcha')
 function check_if_capcha_is_filled () {
     if(allowSubmit == true) {
-        // window.location.href = "../pages/dashboard.html";
         console.log('bien');
         e_cap.innerHTML = ""
+        window.location.href = "../pages/dashboard.html";
     }
     if(allowSubmit == false){
         e_cap.innerHTML = "Completa el CAPTCHA"
