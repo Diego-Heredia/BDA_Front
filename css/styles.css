@@ -1,0 +1,195 @@
+:root {
+    --main-bg-color: #F2F2F2;
+    --main-text-color: #6246ea;
+    --second-text-color: #2b2c34;
+    --second-bg-color: #fffffe;
+  }
+  
+  .primary-text {
+    color: var(--main-text-color);
+  }
+  
+  .second-text {
+    color: var(--second-text-color);
+  }
+  
+  .primary-bg {
+    background-color: var(--main-bg-color);
+  }
+  
+  .secondary-bg {
+    background-color: var(--second-bg-color);
+  }
+  
+  .rounded-full {
+    border-radius: 100%;
+  }
+  .list-group a i{
+      z-index: 2;
+      transition: color 580ms ease;
+  }
+  .imagen-main{
+      width: 29rem;
+  }
+  .list-group a i::after{
+      content: '';
+      background-color: var(--main-bg-color);
+      
+      display: block;
+      width: 7.8rem;
+      height: 2.2rem;
+      position: absolute;
+      left: 1.3rem;
+      top: 1rem;
+      z-index: -1;
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+      transition: box-shadow 0.5s ease;
+    
+  }
+  .list-group a i:hover::after{
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  .list-group{
+    transition: color 580ms ease;
+  }
+  .list-group a:hover{
+    color: #6246ea;
+    
+  }
+  
+  .welcome{
+    font-family: 'Lato', sans-serif;
+      font-weight: 600;
+      font-size: 8em;
+      margin: 8rem 0 8rem 3rem ;
+  }
+  .tabla{
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 16px;
+  }
+
+  #wrapper {
+    overflow-x: hidden;
+    /* background-image: linear-gradient(
+      to right,
+      #baf3d7,
+      #c2f5de,
+      #cbf7e4,
+      #d4f8ea,
+      #ddfaef
+    ); */
+    
+  }
+  #logo{
+      width: 11rem;
+  }
+
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+    /* background-color: #FFDEE9;
+background-image: linear-gradient(180deg, #FFDEE9 0%, #B5FFFC 100%); */
+background-color: #ffffff;
+background-image: linear-gradient(135deg, #ffffff 0%, #d7e1ec 94%);
+
+
+  }
+  
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+  }
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+    background-color: #fffffe;
+    
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+  
+  #menu-toggle {
+    cursor: pointer;
+  }
+  
+  .list-group-item {
+    border: none;
+    padding: 20px 30px;
+  }
+  
+  .list-group-item.active {
+    background-color: transparent;
+    color: var(--main-text-color);
+    font-weight: bold;
+    border: none;
+  }
+
+  /* ----------------------------Scroll Top------------------------------ */
+  .scroll-top {
+      position: fixed;
+      left: 5rem;
+      bottom: 50px;
+      width: 35px;
+      height: 35px;
+      background-color: transparent;
+      align-items: center;
+      justify-content: space-around;
+      transition: opacity 1s ease;
+      opacity: 0;
+    }
+    
+    .scroll-top i {
+        font-size: 40px;
+        transform: rotate(180deg);
+        color: var(--main-text-color);
+    }
+    
+    .scroll-top.arriba {
+        /* bottom: 60px; */
+        opacity: 1;
+        transition: all 1s ease;
+        animation: up 4s ease infinite;
+    }
+    @keyframes up {
+        0% {
+          transform: translateY(-30px);
+        }
+      
+        50% {
+          transform: translateY(0px);
+        }
+      
+        100% {
+          transform: translateY(-30px);
+        }
+      }
+    
+    /* ----------------------------Scroll Top------------------------------ */
+    
+  @media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
