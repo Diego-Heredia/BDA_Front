@@ -4,6 +4,10 @@
     --second-text-color: #2b2c34;
     --second-bg-color: #fffffe;
   }
+  ::placeholder{
+    color: var(--second-text-color);
+    opacity: 1;
+  }
   
   .primary-text {
     color: var(--main-text-color);
@@ -136,7 +140,101 @@ background-image: linear-gradient(135deg, #ffffff 0%, #d7e1ec 94%);
     font-weight: bold;
     border: none;
   }
+  .table_space{
+      margin: 2.8rem 0 1rem 0;
+  }
+  .agregaProd{
+      margin: 0.2rem 0 1.5rem 0.5rem;
+      
+      background-color: var(--second-text-color);
+      color: #F2F2F2;
+  }
+  .agregaProd:hover{
+      color: var(--main-bg-color);
+      background-color: var(--main-text-color);
+  }
+  /* .in_prod input{
+      margin: 0.5rem 0;
+  } */
+  .inputsProd{
+      align-items: center;
+      justify-content: space-between;
+      
+  }
 
+  /* ----------------------------Agregar  Productos------------------------------ */
+  .get-in-touch {
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+  
+  }
+  
+  .get-in-touch .title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 3.2em;
+    line-height: 48px;
+    padding-bottom: 48px;
+       color: var(--second-text-color);
+      background: var(--main-text-color);
+      
+      background: linear-gradient(to right,#f4524d  0%,#5543ca  100%) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+  }
+  
+  .contact-form .form-field {
+    position: relative;
+    margin: 32px 0;
+  }
+  .contact-form .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #5543ca;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+  .contact-form .input-text:focus {
+    outline: none;
+  }
+  .contact-form .input-text:focus + .label,
+  .contact-form .input-text.not-empty + .label {
+    -webkit-transform: translateY(-24px);
+            transform: translateY(-24px);
+  }
+  .contact-form .label {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #5543ca;
+    cursor: text;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, 
+    -webkit-transform .2s ease-in-out;
+  }
+  .contact-form .submit-btn {
+    display: inline-block;
+    background-color: #000;
+     background-image:var(--main-text-color);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width:200px;
+    cursor: pointer;
+  }
+  /* ----------------------------Agregar  Productos------------------------------ */
   /* ----------------------------Scroll Top------------------------------ */
   .scroll-top {
       position: fixed;
