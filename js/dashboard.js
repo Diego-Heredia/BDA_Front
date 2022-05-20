@@ -4,11 +4,19 @@ const entregas = document.querySelector("#entregas")
 const inventario = document.querySelector("#inventario")
 const ventas = document.querySelector("#ventas")
 const compras = document.querySelector("#compras")
+// ------------------------------------------------------Preload-----------------------------------
+window.addEventListener('load', () => {
+    const preloader = document.querySelector(".preload");
+    preloader.classList.add("preload-finished");
+    console.log("Que andas viendo perro del mal ヽ(ಠ_ಠ)ノ");
+})
+// ------------------------------------------------------Preload-----------------------------------
 
 const  options = {
     method: "GET",
     mode: 'cors'
 }
+
 
 async function Nae(){
     const arr = []

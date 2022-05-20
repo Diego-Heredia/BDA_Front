@@ -1,5 +1,6 @@
 const table = document.querySelector("#table_prod")
 
+    
 
 const  options = {
     method: "GET",
@@ -12,6 +13,7 @@ async function Nae(){
     const response = await fetch("http://localhost:3000/products", options)
     const data = await response.json()
     console.log(data[0]);
+    
     for (let i = 0; i < data.length; i++) {
         arr.push(data[i])
         
