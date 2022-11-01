@@ -29,7 +29,7 @@ const  options = {
 async function Nae(){
     const arr = []
     console.log('Hola');
-    const response = await fetch("http://localhost:3000/products", options)
+    const response = await fetch("http://localhost:5500/products", options)
     const data = await response.json()
     console.log(data[0]);
     for (let i = 0; i < data.length; i++) {

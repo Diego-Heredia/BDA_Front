@@ -125,7 +125,7 @@ sub.addEventListener('click', async ()=>{
         body: JSON.stringify(parameter)
     
     }
-    const response = await fetch("http://localhost:3000/products", options)
+    const response = await fetch("http://localhost:5500/products", options)
     console.log(response);
     // Swal.fire(  'Good job!',  'You clicked the button!',  'success')
     Swal.fire({
@@ -140,7 +140,7 @@ sub.addEventListener('click', async ()=>{
       `,
       
     }).then(()=>{
-        window.location.href = "../pages/agregaProducto.html";
+        window.location.href = "../pages/productos.html";
     })
     
     console.log('heyyyy');

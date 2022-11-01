@@ -19,7 +19,7 @@ window.addEventListener("scroll", function () {
 async function Nae(){
     const arr = []
     console.log('Hola');
-    const response = await fetch("http://localhost:3000/inventario", options)
+    const response = await fetch("http://localhost:5500/inventario", options)
     const data = await response.json()
     console.log(data[0]);
     for (let i = 0; i < data.length; i++) {

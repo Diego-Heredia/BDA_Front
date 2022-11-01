@@ -35,7 +35,7 @@ const inputPass = document.getElementById('password')
 
 async function Nae(){
     console.log('Hola');
-    const response = await fetch("http://localhost:3000/usuarios", options)
+    const response = await fetch("http://localhost:5500/usuarios", options)
     const data = await response.json()
     console.log(data);
     for (let i = 0; i < data.length; i++) {
